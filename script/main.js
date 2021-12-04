@@ -7,8 +7,8 @@ window.addEventListener('load', () => {
     showCancelButton: true,
     confirmButtonColor: '#3085d6',
     cancelButtonColor: '#d33',
-    confirmButtonText: 'Yes',
-    cancelButtonText: 'No',
+    confirmButtonText: 'Iya dong',
+    cancelButtonText: 'Masa Ngga',
   }).then((result) => {
     if (result.isConfirmed) {
       document.querySelector('.song').play();
