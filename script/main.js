@@ -52,29 +52,29 @@ const animationTimeline = () => {
   tl.to(".container", 0.1, {
     visibility: "visible",
   })
-    .from(".one", 0.7, {
+    .from(".one", 1, {
       opacity: 0,
       y: 10,
     })
-    .from(".two", 0.4, {
+    .from(".two", 0.6, {
       opacity: 0,
       y: 10,
     })
     .to(
       ".one",
-      0.7, {
+      1, {
       opacity: 0,
       y: 10,
     },
-      "+=2.5"
+      "+=3"
     )
     .to(
       ".two",
-      0.7, {
+      1, {
       opacity: 0,
       y: 10,
     },
-      "-=1"
+      "-=1.5"
     )
     .from(".three", 0.7, {
       opacity: 0,
@@ -83,11 +83,11 @@ const animationTimeline = () => {
     })
     .to(
       ".three",
-      0.7, {
+      0.9, {
       opacity: 0,
       y: 10,
     },
-      "+=2"
+      "+=2.5"
     )
     .from(".four", 0.7, {
       scale: 0.2,
@@ -117,17 +117,17 @@ const animationTimeline = () => {
       "+=0.7"
     )
     .from(".idea-1", 0.7, ideaTextTrans)
-    .to(".idea-1", 0.7, ideaTextTransLeave, "+=1.5")
+    .to(".idea-1", 0.7, ideaTextTransLeave, "+=3")
     .from(".idea-2", 0.7, ideaTextTrans)
-    .to(".idea-2", 0.7, ideaTextTransLeave, "+=1.5")
-    .from(".idea-3", 0.7, ideaTextTrans)
-    .to(".idea-3 strong", 0.5, {
+    .to(".idea-2", 0.7, ideaTextTransLeave, "+=2.5")
+    .from(".idea-3", 1.5, ideaTextTrans)
+    .to(".idea-3 strong", 0.7, {
       scale: 1.2,
       x: 10,
       backgroundColor: "rgb(21, 161, 237)",
       color: "#fff",
     })
-    .to(".idea-3", 0.7, ideaTextTransLeave, "+=1.5")
+    .to(".idea-3", 0.7, ideaTextTransLeave, "+=2.5")
     .from(".idea-4", 0.7, ideaTextTrans)
     .to(".idea-4", 0.7, ideaTextTransLeave, "+=1.5")
     .from(
